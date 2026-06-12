@@ -1599,8 +1599,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 全画面表示ボタンのイベントリスナー
     document.getElementById('fullscreen-btn').addEventListener('click', () => {
-      alert('全画面ボタン押された');
-        
         if (document.documentElement.requestFullscreen) {
             document.documentElement.requestFullscreen();
         } else if (document.documentElement.webkitRequestFullscreen) { // Safari
