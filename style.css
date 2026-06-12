@@ -973,8 +973,8 @@ html {
 
 	.deck-group {
 		position: absolute;
-		bottom: 8vh;
-		right: 40vw;
+		bottom: 30vh;
+		right: 10vw;
 		z-index: 150;
 		align-items: center;
 	}
