@@ -1687,11 +1687,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // デッキデータを復元
     loadDeckDataFromCookie();
     
-    // パスワード認証システムの初期化
-    setupPasswordAuthentication();
-    
-    // 認証チェックを実行（認証済みならデッキ選択画面、未認証ならパスワード画面を表示）
-    checkAuthentication();
+   showDeckInputScreen();
 
     // Initialize with default deck（認証後にデッキ選択画面で実行される）
     // 初期化はゲーム開始時に行うため、ここでは空のデッキで初期化
