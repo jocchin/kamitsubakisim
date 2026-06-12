@@ -1482,8 +1482,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('password-screen').style.display = 'none';
         document.getElementById('deck-input-screen').style.display = 'none';
         document.getElementById('game-board').style.display = 'flex';
-    }
-        });    }    
+    }  
       // モード選択ボタンのイベントリスナー
     document.getElementById('single-deck-mode-btn').addEventListener('click', () => {
         document.getElementById('single-deck-mode-btn').classList.add('active');
