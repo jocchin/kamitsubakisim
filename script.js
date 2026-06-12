@@ -1483,46 +1483,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('deck-input-screen').style.display = 'none';
         document.getElementById('game-board').style.display = 'flex';
     }
-        
-        try {
-            // 入力されたパスワードをハッシュ化
-            const enteredPasswordHash = await hashPassword(enteredPassword);
-            
-            if (enteredPasswordHash === CORRECT_PASSWORD_HASH) {
-                // 認証成功
-                setCookie(AUTH_COOKIE_NAME, 'authenticated', AUTH_EXPIRY_DAYS);
-                
-                // エラーメッセージを隠す
-                errorMessage.style.display = 'none';
-                passwordInput.value = '';
-                
-                // デッキ入力画面へ移動
-                showDeckInputScreen();
-            } else {
-                // 認証失敗
-                errorMessage.style.display = 'block';
-                passwordInput.value = '';
-                passwordInput.focus();
-                
-                // エラーメッセージを数秒後に自動で隠す
-                setTimeout(() => {
-                    errorMessage.style.display = 'none';
-                }, 3000);
-            }
-        } catch (error) {
-            console.error('Authentication error:', error);
-            errorMessage.style.display = 'block';
-            passwordInput.value = '';
-            passwordInput.focus();
-        }
-    }
-        // ボタンクリックで認証
-        passwordSubmitBtn.addEventListener('click', authenticatePassword);
-        
-        // Enterキーで認証
-        passwordInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                authenticatePassword();
             }
         });    }    
       // モード選択ボタンのイベントリスナー
