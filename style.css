@@ -1853,11 +1853,3 @@ html {
 	font-weight: bold;
 	color: #007acc;
 }
-
-@media (min-width: 1200px) {
-	.buttons-deck-wrapper {
-		display: grid !important;
-		grid-template-columns: 1fr 1fr;
-		gap: 5px;
-	}
-}
