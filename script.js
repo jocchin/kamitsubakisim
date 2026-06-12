@@ -1483,11 +1483,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('deck-input-screen').style.display = 'none';
         document.getElementById('game-board').style.display = 'flex';
     }
-      // パスワード認証処理
-    async function authenticatePassword() {
-        const passwordInput = document.getElementById('password-input');
-        const errorMessage = document.getElementById('password-error');
-        const enteredPassword = passwordInput.value.trim();
         
         try {
             // 入力されたパスワードをハッシュ化
