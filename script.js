@@ -1469,45 +1469,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setCookie('playmat-background', 'none');        };
         img.src = imagePath;
     }    // 認証設定
-    // パスワードのSHA-256ハッシュ値（元のパスワード: newpassword456）
-    const CORRECT_PASSWORD_HASH = '9d2a18cc82a3b5bf3d932c1f562f7043066b3fb777d4e00b4dec71de2b8bc5b5'; // SHA-256 hash of "newpassword456"
-    const AUTH_COOKIE_NAME = 'kamitsubaki-auth';
-    const AUTH_EXPIRY_DAYS = 30; // 認証の有効期限（日数）
     
-    // パスワードをSHA-256でハッシュ化する関数
-    async function hashPassword(password) {
-        const encoder = new TextEncoder();
-        const data = encoder.encode(password);
-        const hash = await crypto.subtle.digest('SHA-256', data);
-        const hashArray = Array.from(new Uint8Array(hash));
-        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        return hashHex;
-    }
-    
-    // 認証チェック
-    function checkAuthentication() {
-        const authCookie = getCookie(AUTH_COOKIE_NAME);
-        const isAuthenticated = authCookie === 'authenticated';
-        
-        if (isAuthenticated) {
-            showDeckInputScreen();
-        } else {
-            showPasswordScreen();
-        }
-    }
-    
-    // パスワード画面を表示
-    function showPasswordScreen() {
-        document.getElementById('password-screen').style.display = 'flex';
-        document.getElementById('deck-input-screen').style.display = 'none';
-        document.getElementById('game-board').style.display = 'none';
-        
-        // パスワード入力欄にフォーカス
-        setTimeout(() => {
-            const passwordInput = document.getElementById('password-input');
-            if (passwordInput) passwordInput.focus();
-        }, 100);
-    }
       // デッキ入力画面を表示
     function showDeckInputScreen() {
         document.getElementById('password-screen').style.display = 'none';
