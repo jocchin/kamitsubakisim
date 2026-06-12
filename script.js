@@ -1472,7 +1472,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
       // デッキ入力画面を表示
     function showDeckInputScreen() {
-        document.getElementById('password-screen').style.display = 'flex';
+        document.getElementById('password-screen').style.display = 'none';
         document.getElementById('deck-input-screen').style.display = 'flex';
         document.getElementById('game-board').style.display = 'none';
     }
