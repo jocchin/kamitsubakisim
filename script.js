@@ -1516,12 +1516,6 @@ document.addEventListener('DOMContentLoaded', () => {
             passwordInput.focus();
         }
     }
-    
-    // パスワード認証のイベントリスナー設定
-    function setupPasswordAuthentication() {
-        const passwordInput = document.getElementById('password-input');
-        const passwordSubmitBtn = document.getElementById('password-submit-btn');
-        
         // ボタンクリックで認証
         passwordSubmitBtn.addEventListener('click', authenticatePassword);
         
