@@ -974,7 +974,7 @@ html {
 	.deck-group {
 		position: absolute;
 		bottom: 8vh;
-		right: 0.5vw;
+		right: 8vw;
 		z-index: 150;
 		align-items: center;
 	}
