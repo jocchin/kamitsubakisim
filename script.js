@@ -1483,7 +1483,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('deck-input-screen').style.display = 'none';
         document.getElementById('game-board').style.display = 'flex';
     }
-            }
         });    }    
       // モード選択ボタンのイベントリスナー
     document.getElementById('single-deck-mode-btn').addEventListener('click', () => {
