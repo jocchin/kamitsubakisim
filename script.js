@@ -1900,6 +1900,3 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('opponent-fullscreen').style.display = 'none';
     }
 });
-document.addEventListener('DOMContentLoaded', () => {
-    checkAuthentication();
-});
