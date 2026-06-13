@@ -930,9 +930,9 @@ html {
 	}
 
 	#counters-column-wrapper {
-	    width: calc(var(--card-width) + 7vw);
+	    width: calc(var(--card-width) + 3vw);
 		padding: 0.4vh 0.1vw;
-		gap: 0.5vh; 
+		gap: 0.4vh; 
 		justify-content: space-around;
 	}
 	
