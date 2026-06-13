@@ -934,6 +934,7 @@ html {
 		padding: 0.4vh 0.1vw;
 		gap: 0.5vh;
 		justify-content: space-around;
+		margin-top: 50px; /* ← 下に移動 */
 	}
 
 	#left-column {
