@@ -930,16 +930,10 @@ html {
 	}
 
 	#counters-column-wrapper {
-	  width: calc(var(--card-width) + 7vw);
-   　 padding: 0.4vh 0.1vw;
-　    gap: 0.5vh;
-　    justify-content: space-around;
-		
-		 position: fixed;
-        right: 1px;   /* 右からの距離 */
-        bottom: 0.5vh; /* 下からの距離 */
-
-        z-index: 1000;
+	    width: calc(var(--card-width) + 7vw);
+		padding: 0.4vh 0.1vw;
+		gap: 0.5vh; 
+		justify-content: space-around;
 	}
 	
 	#left-column {
