@@ -919,7 +919,6 @@ html {
     .counters-group {
         padding: 4px;
     }
-}
 		
 	#board-content {
 		height: calc(100% - var(--card-height) - 1.6vmin - 15px);
@@ -936,32 +935,6 @@ html {
 		gap: 0.5vh;
 		justify-content: space-around;
 	}
-
-		@media (max-width: 768px) and (orientation: portrait) {
-
-    #counters-column-wrapper {
-        position: absolute;
-
-        /* 好きな位置に調整 */
-        right: 10px;
-        bottom: 120px;
-
-        width: auto;
-        z-index: 100;
-    }
-
-    .counters-group {
-        display: flex;
-        flex-direction: column; /* ← 縦並び */
-        gap: 6px;
-    }
-
-    .counter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 	#left-column {
 		width: calc(var(--card-width) + 1.5vw);
