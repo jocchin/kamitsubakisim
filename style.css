@@ -937,7 +937,7 @@ html {
 		
 		 position: fixed;
         right: 1px;   /* 右からの距離 */
-        botom: 0.1px; /* 下からの距離 */
+        bottom: 0.5vh; /* 下からの距離 */
 
         z-index: 1000;
 	}
