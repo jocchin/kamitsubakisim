@@ -936,6 +936,12 @@ html {
 　    justify-content: space-around;
    　 position: relative;
  　   top: 80px;
+		
+		 position: fixed;
+        right: 10px;   /* 右からの距離 */
+        bottom: 120px; /* 下からの距離 */
+
+        z-index: 1000;
 	}
 	
 	#left-column {
