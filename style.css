@@ -938,8 +938,8 @@ html {
  　   top: 80px;
 		
 		 position: fixed;
-        right: 5px;   /* 右からの距離 */
-        bottom: 60px; /* 下からの距離 */
+        right: 3px;   /* 右からの距離 */
+        bottom: 15px; /* 下からの距離 */
 
         z-index: 1000;
 	}
