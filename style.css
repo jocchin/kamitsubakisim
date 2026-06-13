@@ -1854,3 +1854,20 @@ html {
 	font-weight: bold;
 	color: #007acc;
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    #counters-column-wrapper {
+        position: fixed;
+        right: 10px;   /* 右からの距離 */
+        bottom: 120px; /* 下からの距離 */
+
+        z-index: 1000;
+    }
+
+    .counters-group {
+        display: flex;
+        flex-direction: column; /* 縦並び */
+        gap: 6px;
+    }
+}
