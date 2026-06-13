@@ -934,8 +934,6 @@ html {
    　 padding: 0.4vh 0.1vw;
 　    gap: 0.5vh;
 　    justify-content: space-around;
-   　 position: relative;
- 　   top: 80px;
 		
 		 position: fixed;
         right: 1px;   /* 右からの距離 */
