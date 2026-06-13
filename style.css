@@ -936,14 +936,15 @@ html {
 		gap: 0.5vh;
 		justify-content: space-around;
 	}
+
 		@media (max-width: 768px) and (orientation: portrait) {
 
     #counters-column-wrapper {
         position: absolute;
 
         /* 好きな位置に調整 */
-        right: 90px;
-        bottom: 150px;
+        right: 10px;
+        bottom: 120px;
 
         width: auto;
         z-index: 100;
@@ -951,17 +952,14 @@ html {
 
     .counters-group {
         display: flex;
-        flex-direction: row; /* 横並び */
-        gap: 10px;
+        flex-direction: column; /* ← 縦並び */
+        gap: 6px;
     }
 
     .counter {
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .counter-label {
-        writing-mode: horizontal-tb;
     }
 }
 
