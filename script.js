@@ -877,7 +877,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'mulligan-btn', 'move-hand-to-trash-btn', 'sort-hand-btn',
             'shuffle-btn', 'search-deck-btn', 'search-volnoise-btn',
             'open-temporary-zone-btn', 'draw-btn', 'draw-bottom-deck-btn',
-            'switch-player-btn', 'turn-end-btn', 'reset-btn', 'change-mat-btn',
+            'switch-player-btn', 'turn-end-btn', 'change-mat-btn',
             'roll-dice-btn'
         ];
         
