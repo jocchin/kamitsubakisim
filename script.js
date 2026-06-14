@@ -1059,9 +1059,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        document.getElementById('reset-btn').addEventListener('click', () => {
-            showResetPopup();
-        });
+        document.getElementById('reset-btn').addEventListener('click', (e) => {
+    console.log("reset button clicked");
+    showResetPopup();
+});
         document.getElementById('change-mat-btn').addEventListener('click', changeBackground);
 
         // 山札の下からドローボタンのイベントリスナー
