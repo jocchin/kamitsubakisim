@@ -417,10 +417,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return cardEl;
     }
 
-    function handlePressStart(e, element, zoneId, slotIndex, slotColor) {
-    if (e.type === 'touchstart') {
+  function handlePressStart(e, element, zoneId, slotIndex, slotColor) {
         e.preventDefault();
-    }
         let isDragging = false;
         let draggedCardVisual = null;
         let draggedCardData = null;        let sourceInfo = { zoneId, slotIndex, slotColor };
