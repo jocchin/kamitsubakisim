@@ -1316,24 +1316,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // リセットポップアップを表示
-   function showResetPopup() {
-    const swapPlayersBtn = document.getElementById('reset-swap-players');
-
-    if (gameState.isDualMode) {
-        swapPlayersBtn.style.display = 'block';
-    } else {
-        swapPlayersBtn.style.display = 'none';
+ function showResetPopup() {
+        // 二人対戦モードの場合のみ「先後を入れ替えてもう一度」ボタンを表示
+        const swapPlayersBtn = document.getElementById('reset-swap-players');        if (gameState.isDualMode) {
+            swapPlayersBtn.style.display = 'block';
+        } else {
+            swapPlayersBtn.style.display = 'none';
+        }
+        document.getElementById('reset-popup-overlay').style.display = 'flex';
     }
-
-    const overlay = document.getElementById('reset-popup-overlay');
-    document.body.appendChild(overlay);
-    overlay.classList.add('show');
-}
       // リセットポップアップを非表示
     function hideResetPopup() {
-    document.getElementById('reset-popup-overlay').classList.remove('show');
-}
-    
+        document.getElementById('reset-popup-overlay').style.display = 'none';
+    }
+   
     // クッキー管理関数
     function setCookie(name, value, days = 30) {
         const expires = new Date();
